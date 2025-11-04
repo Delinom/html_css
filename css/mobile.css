@@ -1,0 +1,120 @@
+h1 {
+    font-size: 26px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main_menu {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+
+.header {
+    height: 640px;
+}
+
+.header_menu_item {
+    display: none;    
+}
+
+.header_menu {
+    order: 1;
+    justify-content: flex-end;
+}
+
+.logo {
+    order: 2;
+    margin-top: 180px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.burger_menu {
+    width: 23px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger_menu span {
+    display: block;
+    width: 23px;
+    height: 4px;
+    color: #fff;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.title {
+    margin-top: 0;    
+}
+
+.trends_gallery {
+    flex-wrap: wrap;
+}
+
+.trends_gallery_item {
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    gap: 45px;
+}
+
+.article {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.article_date-author {
+    margin-bottom: 25px;
+}
+
+.article:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #eeeeee;
+    margin-bottom: 40px;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.products_cards {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.product_card {
+    width: 100%;
+}
+
+@media (orientation: portrait) {
+    .trends_gallery_item {
+    width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    .trends_gallery_item {
+    flex: 0 1 calc(50% - 4px);
+    }
+}
+
+

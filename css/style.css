@@ -109,7 +109,8 @@ h3 {
     width: auto;
 }
 
-.header_menu_item {    
+.header_menu_item {
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -117,6 +118,10 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     margin: 0;
+}
+
+.burger_menu {
+    display: none;
 }
 
 .title {
