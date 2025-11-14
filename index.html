@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 640px)">
 </head>
 <body>
+    <div class="popup_overlay">
+        <form class="popup">
+           <img class="close_btn" src="images/svg/form-x.svg">
+            <h2 class="section_title">Ваш фидбек</h2>
+            <label for="frequency">Как часто вы заходите на сайт?</label>
+            <select id="frequency">
+                <option value="daily">Почти каждый день</option>
+                <option value="once_in_sev_days">Раз в несколько дней</option>
+                <option value="once_in_sev_weeks">Раз в несколько недель</option>
+                <option value="sev_times_in_year">Несколько раз в год</option>
+            </select>
+            <div class="radio_group">
+                <p class="radio_group_title">Вы подписаны на e-mail рассылку?</p>
+                <div class="radio_buttons">
+                    <label class="subscription_radio">
+                        <input type="radio" name="subscription_topic" value="yes" checked>Да
+                    </label>
+                    <label class="subscription_radio">
+                        <input type="radio" name="subscription_topic" value="no">Нет
+                    </label>
+                </div>
+            </div>
+            <label for="feedback">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+            <textarea id="feedback" placeholder="Может, больше рецептов?"></textarea>
+            <button class="subscribe_button">Подписаться</button>
+        </form>
+    </div>
     <header class="header" >
         <div class="container"> 
             <div class="main_menu">

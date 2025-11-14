@@ -78,6 +78,11 @@ h2 {
     gap: 18px;
 }
 
+.articles img {
+    max-width: none;
+    width: 100%;
+}
+
 .article_date-author {
     margin-bottom: 25px;
 }
